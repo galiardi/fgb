@@ -1,0 +1,45 @@
+<header>
+  <h1>Fidelis Global Bank</h1>
+  <h6>Impulsa tus Sueños, Financia tu Éxito</h6>
+</header>
+
+<form id='signup-form' class='labeled-form'>
+  <h3>Registrate</h3>
+  <label for='nombre'>Nombre</label>
+  <input id='nombre' type='text' placeholder='Ingresa tu nombre completo' />
+
+  <label for='rut'>Rut</label>
+  <input id='rut' type='text' placeholder='Ingresa tu rut' />
+
+  <label for='direccion'>Dirección</label>
+  <input id='direccion' type='text' placeholder='Ingresa tu dirección' />
+
+  <label for='telefono'>Telefono</label>
+  <input id='telefono' type='text' placeholder='Ingresa tu telefono' />
+
+  <label for='email'>Email</label>
+  <input id='email' type='text' placeholder='Ingresa tu email' />
+
+  <label for='contrasena'>Contraseña</label>
+  <input
+    id='contrasena'
+    type='password'
+    placeholder='Ingresa tu constraseña'
+    autocomplete='new-password'
+  />
+
+  <label for='repetir-contrasena'>Repetir contraseña</label>
+  <input
+    id='repetir-contrasena'
+    type='password'
+    placeholder='Repite tu constraseña'
+    autocomplete='new-password'
+  />
+
+  <div class='button-div'>
+    <button class='btn btn-primary' type='submit'>Registrarse</button>
+  </div>
+
+  <p>Ya tienes una cuenta? <a href='/auth/login'>Inicia sesion aqui</a></p>
+</form>
+<script defer src='/js/signup.js'></script>

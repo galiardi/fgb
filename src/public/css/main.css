@@ -1,0 +1,106 @@
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+footer {
+  height: 5rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transferencias {
+  font-size: 0.7rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem; /*modificado por media query*/
+  border-radius: 1rem;
+  background-color: #222222;
+  color: #ffffff;
+}
+
+input {
+  margin-bottom: 0.8rem;
+  padding: 0.25rem;
+}
+
+#login-form > button {
+  margin-bottom: 0.5rem;
+}
+
+.labeled-form {
+  align-items: start;
+}
+
+.labeled-form > h3 {
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0.8rem 0;
+}
+
+input {
+  border-radius: 0.25rem;
+  border: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+#img-form {
+  background-color: #ffffff;
+  padding-top: 0;
+  color: black;
+}
+
+.user-img-container {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+}
+
+.user-img {
+  border-radius: 100%;
+}
+
+@media (min-width: 576px) {
+  .transferencias {
+    font-size: 1rem;
+  }
+
+  #transferir-form input {
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  form {
+    padding: 2rem;
+  }
+}

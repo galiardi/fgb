@@ -1,0 +1,54 @@
+<header>
+  <h2>Mi perfil</h2>
+</header>
+<div class='user-img-container'>
+  {{#if user.nombre_imagen}}
+    <img class='user-img img-fluid' src='/api/imagen/{{user.id_usuario}}' alt='' />
+  {{/if}}
+  {{#unless user.nombre_imagen}}
+    <img class='user-img img-fluid' src='/img/imgnotfound.png' alt='' />
+  {{/unless}}
+</div>
+<form id='img-form'>
+  <input id='file' type='file' />
+  <button class='btn btn-primary' type='submit'>Subir imagen</button>
+</form>
+
+<form id='update-form' class='labeled-form'>
+  <h3>Actualiza tus datos</h3>
+  <label for='nombre'>Nombre</label>
+  <input id='nombre' type='text' value='{{user.nombre}}' />
+
+  <label for='direccion'>Dirección</label>
+  <input id='direccion' type='text' value='{{user.direccion}}' />
+
+  <label for='telefono'>Teléfono</label>
+  <input id='telefono' type='text' value='{{user.telefono}}' />
+
+  <label for='email'>Email</label>
+  <input id='email' type='text' value='{{user.email}}' />
+
+  <label for='contrasena'>Contraseña</label>
+  <input
+    id='contrasena'
+    type='password'
+    placeholder='Ingresa tu constraseña'
+    autocomplete='new-password'
+  />
+
+  <label for='repetir-contrasena'>Repetir contraseña</label>
+  <input
+    id='repetir-contrasena'
+    type='password'
+    placeholder='Repite tu constraseña'
+    autocomplete='new-password'
+  />
+
+  <div class='button-div'>
+    <button class='btn btn-primary' type='submit'>Actualizar</button>
+  </div>
+
+</form>
+{{! id_user se necesita en update.js, en la ruta para actualizar el usuario }}
+<script defer>const id_usuario = {{user.id_usuario}}</script>
+<script defer src='/js/update.js'></script>

@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "cd31ef8c-8b2c-4bd8-9cf5-9dbc822f0571",
+		"name": "fgb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21934336"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/operacion/prestamo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"monto\": \"100000\",\n    \"cuotas\": \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/operacion/prestamo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/usuario/inicio-sesion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"pablogaliarditapia@gmail.com\",\n    \"contrasena\": \"asdf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/usuario/inicio-sesion"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,33 @@
+<header>
+  <h1>Nueva Transferencia</h1>
+</header>
+
+<form id='transferir-form' class='labeled-form'>
+  <h3>Ingresa los datos</h3>
+
+  <label for='nombre'>Nombre del destinatario</label>
+  <input id='nombre' type='text' placeholder='Ingresa el nombre del destinatario' />
+
+  <label for='rut'>Rut del destinatario</label>
+  <input id='rut' type='text' placeholder='Ingresa el rut del destinatario' />
+
+  <label for='email'>Correo del destinatario</label>
+  <input id='email' placeholder='Ingresa el correo del destinatario' />
+
+  <label for='monto'>Monto a transferir</label>
+  <input id='monto' type='number' placeholder='Ingresa el monto a transferir' />
+
+  <label for='contrasena'>Contraseña</label>
+  <input
+    id='contrasena'
+    type='password'
+    placeholder='Ingresa tu constraseña'
+    autocomplete='new-password'
+  />
+
+  <div class='button-div'>
+    <button class='btn btn-primary' type='submit'>Transferir</button>
+  </div>
+
+</form>
+<script defer src='/js/nuevaTransferencia.js'></script>
